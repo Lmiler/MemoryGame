@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="Game.css">
+</head>
+<body>
+    <h1 id="headline">Memory Game</h1>
+    <div class="form-container" id="formContainer">
+        <div>
+            <label for="name">Enter your name:</label>
+            <input type="text" id="name" size="12" placeholder="Username">
+        </div>
+        <div>
+            <label for="numberSelect">Choose a number of pairs:</label>
+            <select id="numberSelect"></select>
+        </div>
+        <button id="submit" onclick="loadGame()">Submit</button>
+    </div>
+    <div id="nameDisplay" style="display: none;"></div><br>
+    <div class="card-container" id="cardContainer" style="display: none;"></div>
+    <div class="timer" id="timer" style="display: none;">Time: 0</div>
+    <div class="play-again" id="playAgain" style="display: none;">
+        <button id="resetButton" onclick="resetGame()">Play Again</button>
+    </div>
+    <script src="Game.js"></script>
+</body>
+</html>
